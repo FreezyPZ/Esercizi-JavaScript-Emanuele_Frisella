@@ -1,3 +1,4 @@
+let personName="Paul";
 function canPlay() {
   if (true) {
     let personName = 'Paul';
