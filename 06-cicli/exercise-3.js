@@ -1,15 +1,18 @@
-function adultFilter(persons) {
-  for(let i=0;i<=persons.length;i++){
-    if(persons[i].age>=18){
-      
-      console.log(persons[i]);
-    }
-    else{
-      return null;
-    }
-  }
+// function adultFilter(persons) {
+//   // for(let i = 0; i <= persons.length -1 ; i ++){
+//   //   if(persons[i].age >= 18){
+//   //      console.log(persons[i])
+//   //   }else{
+//   //      console.log('no')
+//   //   }
+//   //  }  
+//   persons.filter((persons)=>{
+//     return persons.age>=18;
+//   })
     
-}
+  
+//  }
+
 
 const persons = [
   { name: 'Paul', age: 16 },
@@ -24,6 +27,19 @@ const persons = [
   { name: 'Alice', age: 28 }
 ];
 
-const adults = adultFilter(persons);
-//console.log(persons);
-console.log(adults);
+function check(param){
+  return param.filter(person => person.age >= 18)
+} 
+
+
+console.log(check(persons))
+
+// let adults = persons.filter(person =>{
+//   return person.age >= 18;
+// })
+
+// console.log(adults);
+
+// const adults = adultFilter(persons);
+// //console.log(persons);
+// console.log(adults);
