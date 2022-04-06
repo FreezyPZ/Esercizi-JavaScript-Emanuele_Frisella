@@ -1,0 +1,33 @@
+body{
+    display: grid;
+    grid-template-columns: 0.3fr 0.3fr 1fr;
+}
+
+.col{
+    width: 539px;
+    height: 1000px;
+    border-style:solid;
+    border-width:1px;
+}
+
+#col1{
+    border-right: 0ch;
+}
+
+#col2{
+    border-right: 0ch;
+}
+
+.box{
+    width:539px;
+    height: 500px;
+    border-style: solid;
+    border-width:1px;
+    border-left: 0ch;
+    border-top: 0ch;
+    border-right: 0ch;
+}
+
+#box-down{
+    border-bottom:0ch;
+}

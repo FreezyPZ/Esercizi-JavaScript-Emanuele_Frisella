@@ -1,0 +1,31 @@
+.up{
+    display: flex;
+}
+
+.down{
+    display: flex;
+}
+
+.box-trasp{
+    width: 539px;
+    height: 500px;
+    border-style: solid;
+    border-width: 1px;
+    border-right: 0ch;
+}
+
+.box-yellow{
+    width: 539px;
+    height: 500px;
+    background-color:rgb(255, 251, 1) ;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.rect{
+    width: 1078px;
+    height: 500px;
+    background-color:rgb(50, 5, 255) ;
+    border-style: solid;
+    border-width: 1px;
+}

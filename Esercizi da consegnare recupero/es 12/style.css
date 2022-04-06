@@ -1,0 +1,28 @@
+.bottom{
+    display: flex;
+}
+
+.up{
+    width: 1618px;
+    height: 500px;
+    border-style: solid;
+    border-width:  1px;
+    background-color: yellow;
+}
+
+.rect{
+    width: 1078px;
+    height: 500px;
+    border-style: solid;
+    border-width:  1px;
+    border-top: 0ch;
+}
+
+.box{
+    width: 539px;
+    height: 500px;
+    border-style: solid;
+    border-width:  1px;
+    border-top: 0ch;
+    border-left: 0ch;
+}

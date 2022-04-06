@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Lezione HTML</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form action="input">
+      <label for="email">email</label>
+      <input type="email" id="email" />
+      <label for="password">password</label>
+      <input type="password" id="password" />
+      <label for="nome-cognome">Inserisci Nome e Cognome</label>
+      <input type="name" name="nome-cognome" id="nome-cognome" />
+      <label for="tel">Tel/cellulare</label>
+      <input type="numeber" name="tel" id="tel" /><br />
+      <input type="radio" id="piano1" name="piano" value="Piano free" />
+      <label for="html">Piano free</label><br />
+      <input type="radio" id="piano2" name="piano" value="Piano base" />
+      <label for="piano2">Piano base 20€</label><br />
+      <input type="radio" id="piano3" name="piano" value="Piano intermedio" />
+      <label for="piano3">Piano intermedio 40€</label><br />
+      <input type="radio" id="piano4" name="piano" value="Piano avanzato" />
+      <label for="piano4">Piano avanzato 99€</label><br />
+      <input type="checkbox" name="check" id="check" />
+      <label for="check">Pro Si/No (50€)</label><br />
+      <input type="number" id="num-carta" />
+      <label for="num-carta">inserisci il numero carta</label><br />
+      <input type="number" id="cvv" />
+      <label for="cvv">CVV</label><br />
+      <input type="date" id="date" value="1" />
+      <label for="date">Scadenza</label>
+      <input type="submit" id="submit" value="sub" />
+      <label for="submit">Paga ora</label>
+    </form>
+  </body>
+</html>

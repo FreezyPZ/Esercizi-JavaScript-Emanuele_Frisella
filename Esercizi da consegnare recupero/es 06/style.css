@@ -1,0 +1,28 @@
+.bottom{
+    display: grid;
+    grid-template-columns: 0.4fr 0.3fr;
+}
+
+.up{
+    width: 1618px;
+    height: 500px;
+    border-style: solid;
+    border-width:  1px;
+}
+
+.rect{
+    width: 1078px;
+    height: 500px;
+    background-color: rgb(3, 3, 3);
+    border-style: solid;
+    border-width:  1px;
+}
+
+.box{
+    width: 539px;
+    height: 500px;
+    border-style: solid;
+    border-width:  1px;
+    border-top: 0ch;
+    border-left: 0ch;
+}

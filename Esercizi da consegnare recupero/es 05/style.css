@@ -1,0 +1,20 @@
+body{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+
+aside{
+    width: 539px;
+    height: 1000px;
+    background-color: yellow;
+    border-style: solid;
+    border-width: 1px;
+    border-right: 0ch;
+}
+
+main{
+    width: 1078px;
+    height: 1000px;
+    border-style: solid;
+    border-width: 1px;
+}

@@ -1,0 +1,23 @@
+.up{
+    display: flex;
+}
+
+.down{
+    display: flex;
+}
+
+.box{
+    width: 539px;
+    height: 500px;
+    background-color: rgb(238, 255, 4);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.rect{
+    width: 1078px;
+    height: 500px;
+    background-color: rgb(255, 2, 2);
+    border-style: solid;
+    border-width: 1px;
+}
