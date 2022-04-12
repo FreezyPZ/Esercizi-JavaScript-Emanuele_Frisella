@@ -1,6 +1,6 @@
 function getKeys(obj) {
-  const keys = obj;
-  return keys;
+  for (let keys in mimmo)
+console.log(keys);
 }
 
 const mimmo = {
@@ -12,4 +12,3 @@ const mimmo = {
 };
 
 const keys = getKeys(mimmo);
-console.log(keys);
