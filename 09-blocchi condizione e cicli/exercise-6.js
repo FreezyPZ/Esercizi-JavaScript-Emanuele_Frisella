@@ -1,9 +1,10 @@
 function getKeys(obj) {
-  for (let keys in mimmo)
-console.log(keys);
-}
+  for ( let cont in obj) {
+    console.log(obj[cont]);
+    }
+  }
 
-const mimmo = {
+const person = {
   firstName: 'John',
   lastName: 'Doe',
   age: 32,
@@ -11,4 +12,5 @@ const mimmo = {
   job: 'Developer',
 };
 
-const keys = getKeys(mimmo);
+const keys = getKeys(person);
+console.log(keys);
