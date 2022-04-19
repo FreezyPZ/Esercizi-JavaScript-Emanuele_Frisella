@@ -1,17 +1,14 @@
 function memoize(fn) {
   let cache = {};
-  if (fn in cache){  
-    console.log("Fetching from cache for",fn);
-    console.log(cache);
-    return cache;
+  return (n) =>{
+    if(n in cache){
+    return `Fetching from cache for ${cache[n]}`
+    }else{
+      let result = fn(n);
+      cache[n] = result;
+      return  result;
+    }
   }
-  else{
-    console.log("Calculating result for", fn);
-    factorial(fn);
-    return factorial;
-
-  }
-    
 }
 
 function factorial(x) {
@@ -24,6 +21,6 @@ function factorial(x) {
 
 factorial = memoize(factorial);
 console.log(factorial(10));
-console.log(factorial(6));
 console.log(factorial(5));
+console.log(factorial(6));
 
