@@ -4,9 +4,7 @@ function memoize(fn) {
     if(n in cache){
     return `Fetching from cache for ${cache[n]}`
     }else{
-      let result = fn(n);
-      cache[n] = result;
-      return  result;
+      return cache[n] = fn(n);
     }
   }
 }

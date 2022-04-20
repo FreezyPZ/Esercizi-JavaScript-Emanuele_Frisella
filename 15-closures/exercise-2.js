@@ -1,6 +1,6 @@
 function pow(pow){
   return function(base){
-    return Math.pow(base,pow);     
+    return Math.pow(pow,base);     
   }
 }
 
