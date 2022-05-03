@@ -1,4 +1,5 @@
-function isAdult({age}) {
+function isAdult(param) {
+  const {age} = param;
   return age >= 18;
 }
 

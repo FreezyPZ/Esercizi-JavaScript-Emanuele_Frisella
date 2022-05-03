@@ -5,6 +5,10 @@ const person = {
   age: 25
 };
 
-const {id, ...personInfo} = person;
+const {id} = person;
+const personInfo = {
+  id,
+  ...person
+}
 
-console.log(id,personInfo);
+console.log(personInfo);

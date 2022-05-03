@@ -1,5 +1,6 @@
-const person = {};
-[id = person.id, firstName = person.firstName, lastName = person.lastName, age = person.age] = [1 , "Mario" , "Rossi", 25];
+const person = {id : 1, firstName: "emanuele", lastName: "rossi", age: 25};
+const {id,firstName,lastName,age} = person;
+
 
 // const id = person.id;
 // const firstName = person.firstName;
