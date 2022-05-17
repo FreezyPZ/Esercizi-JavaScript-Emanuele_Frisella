@@ -8,7 +8,20 @@
 
 
 <script>
-  get
+  async function Todolist() {
+    let response = await fetch('https://jsonplaceholder.typicode.com/todos')
+      .then(response => response.json())
+      .catch(err => console.log(err));
+
+    response.forEach((element) => {
+      let li = document.createElement("li");
+      let titleLi = document.createTextNode(element.title);
+      li.appendChild(titleLi);
+      document.getElementsByClassName("todo-list")[0].appendChild(li);
+    })
+  }
+  Todolist();
+  
 
 </script>
 
