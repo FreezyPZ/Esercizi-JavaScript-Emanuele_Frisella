@@ -11,14 +11,14 @@
 </html>
 
 <script>
-   const addRowButton = document.getElementById('add-row')
+   const rowButton = document.querySelector('#add-row');
 
-const addRow = () =>{
-  let row = document.createElement('tr')
-  row.innerHTML = '<td>FirstName</td><td>LastName</td><td>Age</td>'
-  document.querySelector('tbody').append(row)
+const row = () =>{
+  let row = document.createElement('tr');
+  row.innerHTML = '<td>| FirstName</td> | <td>LastName</td> | <td>Age | </td>';
+  document.querySelector('tbody').append(row);
 
 }
 
- addRowButton.addEventListener('click', addRow)
+rowButton.addEventListener('click', row);
 </script>

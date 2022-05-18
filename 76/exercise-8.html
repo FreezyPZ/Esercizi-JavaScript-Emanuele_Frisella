@@ -14,5 +14,16 @@
 </html>
 
 <script>
-  // code here
+
+  let liHover = document.querySelectorAll('.hero-list-item');
+
+  liHover.forEach(element => {
+    element.addEventListener('mouseover',(event) => {
+      event.target.style.backgroundColor ='red';
+    })
+    
+    element.addEventListener('mouseout',(event) => {
+      event.target.style.backgroundColor ='transparent';
+    })
+  });
 </script>
