@@ -18,23 +18,39 @@
 </html>
 
 <script>
- async function form(){
-    let url = 'https://jsonplaceholder.typicode.com/posts';
+  let url = 'https://jsonplaceholder.typicode.com/posts';
 
-    let compiledForm = {
-     title : document.getElementById('todo-title').value,
-     completed : document.getElementById('todo-completed').checked
+  const form = document.querySelector("form");
+  form.addEventListener("submit",async(e) => {
+    e.preventDefault();
+    const data = {
+      title : e.target[0].value,
+      completed : e.target[1].checked
     }
-    console.log(compiledForm)
-
-    let response = await fetch(url,{
+    const postData = await fetch (url,{
       method: 'POST',
       headers: {'Content-type': 'application/json; charset = utf-8'},
       body: JSON.stringify()
-    });
-  }
+    })
+    const response = await postData.json();
+  })
+//  async function form(){
+//     let url = 'https://jsonplaceholder.typicode.com/posts';
 
-  document.querySelector('#submit-todo').onclick = () => {
-    form();
-  }
+//     let compiledForm = {
+//      title : document.getElementById('todo-title').value,
+//      completed : document.getElementById('todo-completed').checked
+//     }
+//     console.log(compiledForm)
+
+//     let response = await fetch(url,{
+//       method: 'POST',
+//       headers: {'Content-type': 'application/json; charset = utf-8'},
+//       body: JSON.stringify()
+//     });
+//   }
+
+//   document.querySelector('#submit-todo').onclick = () => {
+//     form();
+//   }
 </script>
